@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import ReactDOM from 'react-dom'
+import App from './components/App.jsx'
 import "./styles/styles.scss";
 
 function Wrapper() {
     return (
-        <div>
-            <h1>Hi</h1>
-        </div>
+        <Fragment>
+            <App />
+        </Fragment>
     )
 }
 

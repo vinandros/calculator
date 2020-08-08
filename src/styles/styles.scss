@@ -1,0 +1,148 @@
+$width: 65px;
+$width-operator: 65px;
+$height: 70px;
+$border: 1px;
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(226, 226, 226);
+}
+
+#calculator{
+    width: 295px;
+    margin: 0 auto;
+    border: $border solid black;
+    margin-top: 15vh;
+    padding: 0.9rem;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0 0px 2px 3px rgb(151, 151, 151);
+}
+
+#display-screen{
+    height: $height+50;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+    // border: $border solid black;
+    font-size: 2rem;
+    background-color: rgb(151, 151, 151);
+    box-shadow: 0 0px 2px 2px rgb(151, 151, 151);
+    border-radius: 5px;
+}
+
+
+#numbers-operators{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 0.9rem;
+}
+
+#numbers-container{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   flex-wrap: wrap;
+   width: 100%;
+   
+}
+
+#operators-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+ }
+
+.number{
+    width: $width;
+    height: $height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: $border solid black;
+    margin-top: 0.7rem;
+    margin-right: 0.7rem;
+    background-color: rgb(151, 151, 151);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0px 2px 2px rgb(151, 151, 151);
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.operator{
+    width: $width-operator;
+    height: $height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: $border solid black;
+    margin-bottom: 0.7rem;
+    background-color: rgb(46, 98, 116);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0px 2px 2px rgb(46, 98, 116);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#clear{
+    width: 100%;
+    height: $height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: $border solid black;
+    margin-right: 0.8rem;
+    background-color: rgb(97, 41, 41);
+    box-shadow: 0 0px 2px 2px rgb(97, 41, 41);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#operation, #display{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    margin-right: 5px;
+}
+
+#zero{
+    width: 2*$width+9;
+}
+
+#decimal{
+    width: $width+0.5;
+    height: $height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: $border solid black;
+    margin-top: 0.7rem;
+    background-color: rgb(57, 38, 77);
+    color:white;
+    box-shadow: 0 0px 2px 2px rgb(57, 38, 77);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#equals{
+    width: $width;
+    height: $height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: $border solid black;
+    color: white;
+    background-color: rgb(39, 83, 42);
+    box-shadow: 0 0px 2px 2px rgb(39, 83, 42);
+    border-radius: 5px;
+    cursor: pointer;
+}
